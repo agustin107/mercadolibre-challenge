@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { Home } from "./pages/Home";
 import { Search } from "./pages/Search";
+import { View } from "./pages/View";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Route path="/">
           <Route index element={<Home />} />
           <Route path="items" element={<Search />} />
-          <Route path="items/:id" element={<div />} />
+          <Route path="items/:id" element={<View />} />
         </Route>
 
         {/** Option 2 */}
